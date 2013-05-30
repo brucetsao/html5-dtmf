@@ -66,7 +66,7 @@ nfield = document.querySelector("input[type=text]")
 dfield = document.querySelector("input[type=number]")
 button = document.querySelector("button")
 button.addEventListener \click, (e) ->
-  dial(nfield.value)
+  dial(nfield.value.replace(/[^0-9]/g, ''))
 
 dfield.value = delay
 dfield.addEventListener \change, (e) ->

@@ -99,7 +99,7 @@
   dfield = document.querySelector("input[type=number]");
   button = document.querySelector("button");
   button.addEventListener('click', function(e){
-    return dial(nfield.value);
+    return dial(nfield.value.replace(/[^0-9]/g, ''));
   });
   dfield.value = delay;
   dfield.addEventListener('change', function(e){
