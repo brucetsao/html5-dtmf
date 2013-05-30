@@ -57,7 +57,6 @@
       return [DTMF.H[(num - 1) % 3], DTMF.V[~~((num - 1) / 3)]];
     }
   };
-  console.log("Loaded");
   console.log(JSON.stringify(DTMF.get(5)));
   wait = function(delay, fn){
     return setTimeout(fn, delay);

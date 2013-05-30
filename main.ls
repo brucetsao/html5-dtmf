@@ -37,7 +37,6 @@ DTMF =
     return [1336 941] if num is 0
     [ DTMF.H[(num - 1) % 3], DTMF.V[~~((num - 1) / 3)] ]
 
-console.log("Loaded")
 console.log(JSON.stringify(DTMF.get(5)))
 
 wait = (delay, fn) -> setTimeout fn, delay
