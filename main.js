@@ -14,7 +14,6 @@
       this.node = this.context.createJavaScriptNode(512, 1, 1);
       this.node.onaudioprocess = bind$(this, 'process');
       this.mod = this.sampleRate / (2 * Math.PI * this.frequency);
-      console.log(this.mod);
     }
     prototype.setFreq = function(frequency){
       this.frequency = frequency;

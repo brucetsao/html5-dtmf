@@ -8,7 +8,6 @@ class SineWave
     @node = @context.createJavaScriptNode(512, 1, 1)
     @node.onaudioprocess = @~process
     @mod = @sample-rate / (2 * Math.PI * @frequency)
-    console.log(@mod)
 
   setFreq: (@frequency) ->
     @mod = @sample-rate / (2 * Math.PI * @frequency)
